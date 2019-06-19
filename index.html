@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chem DB</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap');
+  </style>
+  <link rel="stylesheet" href="signin.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/d27b01dd4f.js"></script>
+  <script src="https://marvinjs.chemicalize.com/v1/b708cb37433240efbdacce6b396fa723/client-settings.js"></script>
+  <script src="https://marvinjs.chemicalize.com/v1/client.js"></script>
+</head>
+
+<body>
+  <header class="maroon">
+    <div class="grid-container">
+      <div class="cell1">
+        <h2><img src="mol5.svg" class="icon" alt="header-mol-img">Virginia Tech Molecular Database</h2>
+      </div>
+      <div class="cell2 header-buttons">
+        <button type="button" class="btn header-btn white">Sign Up</button>
+        <button type="button" class="btn header-btn orange">Log In</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="top-panel">
+    <div class="signin-container">
+      <form class="form-signin">
+        <a href="#browse-section">
+          <h3>Browse Molecules</h3>
+        </a>
+        <h5>or</h5>
+        <h3>Sign In:</h3>
+        <div class="form-label-group">
+          <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+          <label for="inputEmail">Email address</label>
+        </div>
+
+        <div class="form-label-group">
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+          <label for="inputPassword">Password</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button class="btn maroon header-btn" type="submit">Log in</button>
+      </form>
+      <!-- Empty cell for grid to show picture -->
+      <div class="empty-cell">
+      </div>
+    </div>
+  </div>
+  <div class="middle-panel" id="browse-section">
+    <img src="search8.png" alt="" id="middle-panel-img">
+    <h3 class="center mid-panel-title">Search Molecule or Draw Structure</h3>
+    <div id="name-search-input" class="input-group mb-3 search-options">
+      <input type="text" id="mol-search-input" class="form-control" placeholder="Molecule Name" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <div id="chem-sketch" class="search-options">
+      <div id="marvin-test" style="width: 600px; height: 480px"></div>
+      <button id="action-button" type="button">Click Me!</button>
+    </div>
+    <div class="search-icons">
+      <h6 id="name-search-btn"><img src="search-name-icon.svg" class="search-icon" alt="draw-structure-icon"><br />Search Name</h6>
+      <h6 id="draw-structure-btn"><img src="draw-structure-icon.svg" class="search-icon" alt="draw-structure-icon"><br />Draw Structure</h6>
+      <h6 id="advanced-search-btn"><img src="advanced-search-icon.svg" class="search-icon" alt="draw-structure-icon"><br />Advanced Search</h6>
+    </div>
+    <div class="flaticon">
+      <p>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.e0a23e7eba289970f6267cfeef9eb294.1558116079372.1560290427842.1560868169924.3&__hssc=57440181.4.1560868169924&__hsfp=1997848491" title="Freepik">Freepik</a> from <a
+          href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+    </div>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

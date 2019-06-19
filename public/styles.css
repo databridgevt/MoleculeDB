@@ -1,0 +1,170 @@
+/*=========== ELEMENT CSS ===========*/
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat";
+  color: #777;
+}
+
+header {
+  position: relative;
+  height: auto;
+}
+
+header>h2 {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: 1rem;
+}
+
+a {
+  color: #777;
+}
+
+a:hover {
+  color: #777;
+}
+
+/*============ CLASS CSS ===========*/
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.maroon {
+  background-color: #78283c;
+  color: white;
+}
+
+.maroon.btn:hover {
+  opacity: 0.75;
+  color: white;
+}
+
+.orange {
+  background-color: #da7d39;
+  color: white;
+}
+
+.orange.btn:hover {
+  background-color: #d9a074;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  color: #777;
+}
+
+.white.btn:hover {
+  color: #222;
+}
+
+.center {
+  text-align: center;
+}
+
+/*===== Header =====*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  padding: 1rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 5%;
+}
+
+.header-buttons {
+  text-align: right;
+  padding: 0.5rem 0;
+}
+
+.header-btn {
+  position: relative;
+  height: 100%;
+  width: 48%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.23);
+}
+
+/*===== Top Panel ======*/
+.top-panel {
+  background-image: url("mol3.png");
+  background-color: #cccccc;
+  background-size: cover;
+  height: 95%;
+}
+
+/*===== Middle Panel =====*/
+.middle-panel {
+  background-color: #fbfbfb;
+  color: #777;
+  opacity: 0.9;
+  height: 105%;
+  position: relative;
+}
+
+.mid-panel-title {
+  font-weight: 800;
+  position: relative;
+  top: 30%;
+  color: #555;
+}
+
+.search-icon {
+  width: 20%;
+}
+
+.search-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 40%;
+  position: relative;
+  top: 38%;
+  margin: auto;
+  font-weight: 400;
+}
+
+.search-icons h6 {
+  text-align: center;
+}
+
+.search-icons h6:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flaticon {
+  position: absolute;
+  bottom: 0;
+  right: 28%;
+}
+
+.flaticon p {
+  margin-bottom: 0;
+}
+
+/*=========== ID CSS ===========*/
+#middle-panel-img {
+  position: absolute;
+  width: 40%;
+  height: 105%;
+  top: -5%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+#name-search-input {
+  margin: auto;
+  width: 50%;
+  position: relative;
+  top: 35%;
+}
+
+#chem-sketch {
+  display: none;
+  margin: 1rem;
+}
